@@ -1,13 +1,15 @@
 {
     "name": "anwinged/reason",
     "type": "library",
+    "description": "Description for operation statuses",
+    "keywords": ["reason", "operation reason", "operation status"],
+    "license": "MIT",
     "require": {
         "php": "^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.0"
     },
-    "license": "MIT",
     "authors": [
         {
             "name": "Anton Vakhrushev",
