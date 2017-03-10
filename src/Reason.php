@@ -51,6 +51,30 @@ class Reason
     }
 
     /**
+     * Checks is status successful.
+     *
+     * Shortcut for $this->getStatus()->isSuccess()
+     *
+     * @return bool
+     */
+    public function isSuccess(): bool
+    {
+        return $this->status->isSuccess();
+    }
+
+    /**
+     * Checks is status failed.
+     *
+     * Shortcut for $this->getStatus()->isFail()
+     *
+     * @return bool
+     */
+    public function isFail(): bool
+    {
+        return $this->status->isFail();
+    }
+
+    /**
      * Appends reason to current and returns new reason.
      *
      * Reason with highest weighs wins.
