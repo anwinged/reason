@@ -42,6 +42,6 @@ class BooleanStatus implements ReasonStatusInterface
      */
     public function getWeight(): int
     {
-        return $this->value ? 0 : 1;
+        return $this->value ? 0 : PHP_INT_MAX;
     }
 }
