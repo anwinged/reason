@@ -1,4 +1,5 @@
 /log/
 /vendor/
 
-.php_cs.cache
+/.php_cs.cache
+/composer.lock
