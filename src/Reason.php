@@ -91,11 +91,11 @@ class Reason
      */
     public function andX(Reason $other): self
     {
-        if ($other->getStatus()->getWeight() > $this->status->getWeight()) {
+        if ($other->status->getWeight() > $this->status->getWeight()) {
             return clone $other;
         }
 
-        if ($other->getStatus()->getWeight() === $this->status->getWeight()) {
+        if ($other->status->getWeight() === $this->status->getWeight()) {
             return $this->withMessages($other->getMessages());
         }
 
@@ -117,11 +117,11 @@ class Reason
      */
     public function orX(Reason $other): self
     {
-        if ($other->getStatus()->getWeight() < $this->status->getWeight()) {
+        if ($other->status->getWeight() < $this->status->getWeight()) {
             return clone $other;
         }
 
-        if ($other->getStatus()->getWeight() === $this->status->getWeight()) {
+        if ($other->status->getWeight() === $this->status->getWeight()) {
             return $this->withMessages($other->getMessages());
         }
 
